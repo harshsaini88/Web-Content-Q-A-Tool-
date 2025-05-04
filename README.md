@@ -84,7 +84,7 @@ This application uses a RAG (Retrieval-Augmented Generation) architecture:
 ## Project Structure
 
 ```
-url_qa_app/
+Web-Content-Q-A-Tool-/
 ├── app.py                  # Main Streamlit application
 ├── requirements.txt        # Python dependencies
 ├── README.md               # Project documentation

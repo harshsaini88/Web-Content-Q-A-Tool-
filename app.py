@@ -114,24 +114,24 @@ def main():
                 
                 # FIX: Change the input dictionary key from 'question' to 'query'
                 input_dict = {"query": question}
-                logger.info(f"Input dictionary: {input_dict}")
+                # logger.info(f"Input dictionary: {input_dict}")
                 
                 # Generate answer using invoke
                 response = qa_chain.invoke(input_dict)
                 
                 # Log the response
-                logger.info(f"QA chain response: {response}")
-                
+                # logger.info(f"QA chain response: {response}")
+            
                 # Print response to terminal
-                print("QA Chain Response:")
-                print(f"Question: {question}")
-                print(f"Answer: {response['result']}")
-                if "source_documents" in response:
-                    print("Sources:")
-                    for i, doc in enumerate(response["source_documents"]):
-                        print(f"  Source {i+1}:")
-                        print(f"    URL: {doc.metadata.get('source', 'N/A')}")
-                        print(f"    Content: {doc.page_content[:300]}...")
+                # print("QA Chain Response:")
+                # print(f"Question: {question}")
+                # print(f"Answer: {response['result']}")
+                # if "source_documents" in response:
+                #     print("Sources:")
+                #     for i, doc in enumerate(response["source_documents"]):
+                #         print(f"  Source {i+1}:")
+                #         print(f"    URL: {doc.metadata.get('source', 'N/A')}")
+                #         print(f"    Content: {doc.page_content[:300]}...")
                 
                 # Display answer in Streamlit UI
                 st.subheader("Answer:")
